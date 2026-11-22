@@ -1,0 +1,543 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>BLUSH & THREAD | Contemporary Women's Fashion Boutique</title>
+  <meta name="description" content="Discover Blush & Thread: contemporary women's fashion celebrating timeless Indian handloom craft and modern international silhouettes. Dressed in your own beauty.">
+  <link rel="stylesheet" href="assets/css/style.css">
+  <link rel="stylesheet" href="assets/css/responsive.css">
+</head>
+<body>
+
+  <!-- =========================================================================
+       SITE HEADER WRAPPER (Top Strip + Main 3-Column Sticky Navigation)
+       ========================================================================= -->
+  <header class="site-header-wrapper" id="site-header">
+    <!-- Top Announcement Strip -->
+    <div class="top-announcement-bar">
+      <div class="announcement-content">
+        <span class="announcement-item primary">A LITTLE MORE BEAUTY IN EVERY DETAIL.</span>
+        <span class="announcement-separator">·</span>
+        <span class="announcement-item secondary">COMPLIMENTARY EXPRESS DELIVERY ACROSS INDIA ON ORDERS OVER ₹5,000</span>
+      </div>
+    </div>
+
+    <!-- Main Header (Desktop Grid: 1fr auto 1fr) -->
+    <div class="main-header">
+      <div class="header-grid">
+        <!-- Left Column: Navigation Links & Mobile Toggle -->
+        <div class="header-col-left">
+          <button class="mobile-menu-toggle" aria-label="Open navigation menu">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6">
+              <line x1="3" y1="6" x2="21" y2="6"/>
+              <line x1="3" y1="12" x2="21" y2="12"/>
+              <line x1="3" y1="18" x2="21" y2="18"/>
+            </svg>
+          </button>
+          
+          <nav class="desktop-navigation" aria-label="Main Navigation">
+            <ul class="desktop-nav-list">
+              <li><a href="new-arrivals.html" class="desktop-nav-link">New Arrivals</a></li>
+              <li><a href="shop.html" class="desktop-nav-link">Clothing</a></li>
+              <li><a href="collection.html" class="desktop-nav-link">Collections</a></li>
+              <li><a href="about.html" class="desktop-nav-link">Our Story</a></li>
+            </ul>
+          </nav>
+        </div>
+
+        <!-- Center Column: Mathematically Centred Brand Wordmark -->
+        <div class="header-col-center">
+          <a href="index.html" class="brand-logo-link" aria-label="Blush and Thread Homepage">
+            <span class="brand-wordmark">BLUSH & THREAD</span>
+            <span class="brand-tagline">DRESSED IN YOUR OWN BEAUTY.</span>
+          </a>
+        </div>
+
+        <!-- Right Column: Utility Icons (Search, Wishlist, Bag) -->
+        <div class="header-col-right">
+          <button class="header-icon-btn" data-action="open-search" aria-label="Search Collection">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+              <circle cx="11" cy="11" r="7"/>
+              <path d="M21 21l-4.35-4.35"/>
+            </svg>
+          </button>
+
+          <button class="header-icon-btn" data-action="open-wishlist" aria-label="View Wishlist">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+              <path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/>
+            </svg>
+            <span class="badge-count wishlist-count-badge">0</span>
+          </button>
+
+          <button class="header-icon-btn" data-action="open-bag" aria-label="View Shopping Bag">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+              <path d="M6 2L3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4z"/>
+              <line x1="3" y1="6" x2="21" y2="6"/>
+              <path d="M16 10a4 4 0 0 1-8 0"/>
+            </svg>
+            <span class="badge-count cart-count-badge">0</span>
+          </button>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- Mobile Drawer Menu -->
+  <aside class="mobile-nav-drawer" id="mobile-nav-drawer" aria-label="Mobile Navigation">
+    <div class="mobile-nav-backdrop"></div>
+    <div class="mobile-nav-panel">
+      <div class="mobile-nav-header">
+        <span class="brand-wordmark" style="font-size:1.3rem;">BLUSH & THREAD</span>
+        <button class="mobile-nav-close-btn" aria-label="Close Navigation">&times;</button>
+      </div>
+      <div class="mobile-nav-body">
+        <a href="new-arrivals.html" class="mobile-nav-link"><span>New Arrivals</span> <span>&rarr;</span></a>
+        <a href="shop.html" class="mobile-nav-link"><span>Clothing</span> <span>&rarr;</span></a>
+        <a href="collection.html" class="mobile-nav-link"><span>Collections</span> <span>&rarr;</span></a>
+        <a href="about.html" class="mobile-nav-link"><span>Our Story</span> <span>&rarr;</span></a>
+        <a href="contact.html" class="mobile-nav-link"><span>Atelier & Contact</span> <span>&rarr;</span></a>
+        <a href="cart.html" class="mobile-nav-link"><span>Shopping Bag</span> <span>&rarr;</span></a>
+      </div>
+      <div class="mobile-nav-footer">
+        <p class="mobile-nav-contact-item"><strong>Atelier Hours:</strong> Mon - Sat: 10:30 AM - 7:30 PM</p>
+        <p class="mobile-nav-contact-item"><strong>Concierge:</strong> concierge@blushandthread.com</p>
+      </div>
+    </div>
+  </aside>
+
+  <main id="main-content">
+    <!-- =======================================================================
+         SECTION A: HERO SECTION (Split Editorial Composition)
+         ======================================================================= -->
+    <section class="hero-editorial-section" aria-label="Editorial Hero">
+      <div class="container">
+        <div class="hero-split-grid">
+          <!-- Left: Editorial Typography & CTAs -->
+          <div class="hero-text-col reveal-on-scroll">
+            <span class="hero-badge-tag">Spring / Summer Atelier '26</span>
+            <h1 class="hero-heading">
+              BEAUTY IN <em>EVERY THREAD.</em>
+            </h1>
+            <p class="hero-description">
+              Thoughtfully chosen styles for women who make elegance their own. Where timeless handloom heritage meets fluid contemporary design.
+            </p>
+            <div class="hero-cta-group">
+              <a href="shop.html" class="btn btn-primary">EXPLORE THE COLLECTION</a>
+              <a href="collection.html" class="btn btn-secondary">VIEW LOOKBOOK</a>
+            </div>
+
+            <div class="hero-stats-row">
+              <div class="hero-stat-item">
+                <div class="stat-num">100%</div>
+                <div class="stat-label">Handcrafted Weaves</div>
+              </div>
+              <div class="hero-stat-item">
+                <div class="stat-num">Jaipur</div>
+                <div class="stat-label">Artisan Ateliers</div>
+              </div>
+              <div class="hero-stat-item">
+                <div class="stat-num">Pan-India</div>
+                <div class="stat-label">Express Delivery</div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Right: Hero Editorial Image with Floating Architectural Card -->
+          <div class="hero-image-col reveal-on-scroll">
+            <div class="hero-deco-ring"></div>
+            <div class="hero-image-frame">
+              <img src="https://images.unsplash.com/photo-1539109136881-3be0616acf4b?auto=format&fit=crop&w=1200&q=80" 
+                   alt="Blush & Thread Contemporary Women's Fashion Campaign" 
+                   loading="eager">
+            </div>
+
+            <!-- Floating Card -->
+            <div class="hero-floating-card">
+              <span class="floating-card-eyebrow">FEATURED SILHOUETTE</span>
+              <h3 class="floating-card-title">The Gulnar Chanderi</h3>
+              <a href="product.html?id=bt-01" class="floating-card-link">DISCOVER PIECE &rarr;</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- =======================================================================
+         SECTION B: CATEGORY DISCOVERY (Asymmetric Editorial Cards)
+         ======================================================================= -->
+    <section class="category-discovery-section" aria-label="Category Discovery">
+      <div class="container">
+        <div class="section-header text-center reveal-on-scroll">
+          <span class="section-eyebrow">CURATED CHAPTERS</span>
+          <h2 class="section-title">Explore by Wardrobe Edit</h2>
+          <p class="section-subtitle">From quiet morning meetings to luminous evening galas, each edit is rendered in natural fibres and artisanal grace.</p>
+        </div>
+
+        <div class="categories-asymmetric-grid">
+          <!-- Card 1: Tall Feature (Contemporary Ethnic) -->
+          <article class="category-card cat-card-tall reveal-on-scroll">
+            <img class="cat-bg-img" src="https://images.unsplash.com/photo-1583391733956-3750e0ff4e8b?auto=format&fit=crop&w=1000&q=80" alt="Contemporary Ethnic" loading="lazy">
+            <div class="cat-overlay-gradient"></div>
+            <div class="cat-content-wrap">
+              <span class="cat-eyebrow">ATELIER HERITAGE</span>
+              <h3 class="cat-title">Contemporary Ethnic</h3>
+              <p class="cat-desc">Handloom Chanderi silk anarkalis, tissue sarees and Banarasi zari peplums reimagined with modern restraint.</p>
+              <a href="shop.html?category=ethnic" class="cat-link">SHOP CONTEMPORARY ETHNIC &rarr;</a>
+            </div>
+          </article>
+
+          <!-- Card 2: Standard (The Everyday Edit) -->
+          <article class="category-card cat-card-standard-1 reveal-on-scroll">
+            <img class="cat-bg-img" src="https://images.unsplash.com/photo-1572804013309-59a88b7e92f1?auto=format&fit=crop&w=800&q=80" alt="The Everyday Edit" loading="lazy">
+            <div class="cat-overlay-gradient"></div>
+            <div class="cat-content-wrap">
+              <span class="cat-eyebrow">EFFORTLESS DAYS</span>
+              <h3 class="cat-title">The Everyday Edit</h3>
+              <p class="cat-desc">Breathable silk tencel wraps, pure European linen trenches and fluid culottes.</p>
+              <a href="shop.html?category=everyday" class="cat-link">SHOP THE EVERYDAY EDIT &rarr;</a>
+            </div>
+          </article>
+
+          <!-- Card 3: Standard (Occasion Wear) -->
+          <article class="category-card cat-card-standard-2 reveal-on-scroll">
+            <img class="cat-bg-img" src="https://images.unsplash.com/photo-1566174053879-31528523f8ae?auto=format&fit=crop&w=800&q=80" alt="Occasion Wear" loading="lazy">
+            <div class="cat-overlay-gradient"></div>
+            <div class="cat-content-wrap">
+              <span class="cat-eyebrow">CELEBRATION READY</span>
+              <h3 class="cat-title">Occasion Wear</h3>
+              <p class="cat-desc">Architectural blazer dresses, draped organza gowns and liquid satin cocktails.</p>
+              <a href="shop.html?category=occasion" class="cat-link">SHOP OCCASION WEAR &rarr;</a>
+            </div>
+          </article>
+
+          <!-- Card 4: Wide Span (Effortless Essentials) -->
+          <article class="category-card cat-card-wide reveal-on-scroll">
+            <img class="cat-bg-img" src="https://images.unsplash.com/photo-1524041255072-7da0525d6b34?auto=format&fit=crop&w=1200&q=80" alt="Effortless Essentials" loading="lazy">
+            <div class="cat-overlay-gradient"></div>
+            <div class="cat-content-wrap">
+              <span class="cat-eyebrow">TACTILE FOUNDATIONS</span>
+              <h3 class="cat-title">Effortless Essentials</h3>
+              <p class="cat-desc">Cashmere-merino rib knits, bias silk charmeuse camisoles and sandwashed silk shirts designed to be cherished for years.</p>
+              <a href="shop.html?category=essentials" class="cat-link">SHOP ESSENTIALS &rarr;</a>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- =======================================================================
+         SECTION C: NEW ARRIVALS (Curated Product Collection)
+         ======================================================================= -->
+    <section class="new-arrivals-section" style="padding: 6.5rem 0; background-color: var(--color-ivory-light);" aria-label="New Arrivals">
+      <div class="container">
+        <div class="section-header text-center reveal-on-scroll">
+          <span class="section-eyebrow">FRESH FROM THE ATELIER</span>
+          <h2 class="section-title">New Arrivals</h2>
+          <p class="section-subtitle">Our latest creations balancing delicate hand embroidery, crisp modern cuts and serene dusty rose palettes.</p>
+        </div>
+
+        <div class="product-grid" id="home-new-arrivals-grid">
+          <!-- Populated by assets/js/main.js -->
+        </div>
+
+        <div style="text-align: center; margin-top: 3.5rem;" class="reveal-on-scroll">
+          <a href="new-arrivals.html" class="btn btn-secondary">VIEW ALL NEW ARRIVALS</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- =======================================================================
+         SECTION D: EDITORIAL CAMPAIGN ("YOUR STYLE. YOUR STORY.")
+         ======================================================================= -->
+    <section class="editorial-campaign-section" aria-label="Editorial Campaign">
+      <div class="campaign-bg-wrapper">
+        <img src="https://images.unsplash.com/photo-1490481651871-ab68de25d43d?auto=format&fit=crop&w=1800&q=80" alt="Campaign visual" loading="lazy">
+      </div>
+      <div class="container">
+        <div class="campaign-content reveal-on-scroll">
+          <span class="campaign-eyebrow">THE BLUSH & THREAD PHILOSOPHY</span>
+          <h2 class="campaign-heading">
+            YOUR STYLE.
+            <em>Your Story.</em>
+          </h2>
+          <p class="campaign-body">
+            We believe dressing is an intimate conversation between your inner grace and the world. 
+            Every seam is stitched with patience, honouring the cadence of master craftswomen who weave stories of quiet confidence.
+          </p>
+          <div class="campaign-cta-wrap">
+            <a href="collection.html" class="btn btn-rose">EXPLORE THE EDITORIAL</a>
+            <a href="about.html" class="btn btn-secondary" style="border-color: #FFFFFF; color: #FFFFFF;">OUR CRAFT STORY</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- =======================================================================
+         SECTION E: SIGNATURE COLLECTION (Contemporary Indian & Western Fusion)
+         ======================================================================= -->
+    <section class="signature-collection-section" aria-label="Signature Collection">
+      <div class="container">
+        <div class="signature-asymmetric-layout">
+          <!-- Left: Stacked Editorial Imagery -->
+          <div class="signature-lookbook-stack reveal-on-scroll">
+            <img class="lookbook-main-img" src="https://images.unsplash.com/photo-1617627143750-d86bc21e42bb?auto=format&fit=crop&w=1000&q=80" alt="Contemporary Indian & Western Fusion Lookbook" loading="lazy">
+            <div class="lookbook-sub-card">
+              <img src="https://images.unsplash.com/photo-1554412933-514a83d2f3c8?auto=format&fit=crop&w=600&q=80" alt="Detail of handloom embroidery" loading="lazy">
+            </div>
+          </div>
+
+          <!-- Right: Narrative & Highlights -->
+          <div class="signature-story-content reveal-on-scroll">
+            <span class="section-eyebrow">THE SIGNATURE SUITE</span>
+            <h2 class="section-title">Where Global Tailoring Meets Indian Textile Poetics</h2>
+            <p style="font-size: 1.05rem; color: var(--color-charcoal-muted); line-height: 1.7; margin-bottom: 2rem;">
+              Our Signature Suite celebrates the multidimensional modern woman. Here, sharp Italian crepe blazers converse effortlessly with pure metallic tissue sarees and hand-embroidered raw silk capes.
+            </p>
+
+            <div class="craft-highlights-list">
+              <div class="craft-item">
+                <div class="craft-icon">✦</div>
+                <div>
+                  <h4 class="craft-title">Rare Handloom Weaves</h4>
+                  <p class="craft-desc">Authentic Chanderi, Banarasi katan silk, and Bengal Jamdani sourced directly from heritage family looms.</p>
+                </div>
+              </div>
+
+              <div class="craft-item">
+                <div class="craft-icon">✦</div>
+                <div>
+                  <h4 class="craft-title">Sculptural Modern Ease</h4>
+                  <p class="craft-desc">Tailored contours with discreet elastication and hidden pockets crafted for spontaneous elegance.</p>
+                </div>
+              </div>
+
+              <div class="craft-item">
+                <div class="craft-icon">✦</div>
+                <div>
+                  <h4 class="craft-title">Mindful Limited Editions</h4>
+                  <p class="craft-desc">Small artisan batches of 50 to 100 pieces per silhouette to eliminate waste and protect individuality.</p>
+                </div>
+              </div>
+            </div>
+
+            <a href="shop.html?category=ethnic" class="btn btn-primary">DISCOVER SIGNATURE STYLES</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- =======================================================================
+         SECTION F: BRAND STORY ("MADE FOR THE WAY YOU FEEL.")
+         ======================================================================= -->
+    <section class="brand-story-section" aria-label="Brand Story">
+      <div class="container">
+        <div class="story-split-container">
+          <div class="story-imagery-col reveal-on-scroll">
+            <img class="story-framed-img" src="https://images.unsplash.com/photo-1515886657613-9f3515b0c78f?auto=format&fit=crop&w=1000&q=80" alt="Blush & Thread Creative Director Styling" loading="lazy">
+            <div class="story-quote-stamp">
+              <p class="stamp-text">"When you feel effortlessly comfortable, true elegance unfolds naturally."</p>
+              <span class="stamp-author">— Blush & Thread Studio</span>
+            </div>
+          </div>
+
+          <div class="story-narrative-col reveal-on-scroll">
+            <span class="section-eyebrow">OUR ESSENCE</span>
+            <h2 class="section-title">MADE FOR THE WAY YOU FEEL.</h2>
+            <p class="story-lead-p">
+              We started Blush & Thread with a quiet conviction: women's clothing should feel as tender on the skin as it looks arresting in the mirror.
+            </p>
+            <p class="story-body-p">
+              We bypassed loud synthetic trends in favour of mulberry silks, washed European linens, and heritage botanical dyes. Every cut is engineered to move with you through life's intimate and public triumphs without friction or compromise.
+            </p>
+            <a href="about.html" class="btn btn-secondary">READ OUR COMPLETE STORY</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- =======================================================================
+         SECTION G: CUSTOMER LOVE (Tasteful Testimonials)
+         ======================================================================= -->
+    <section class="customer-love-section" aria-label="Customer Testimonials">
+      <div class="container">
+        <div class="section-header text-center reveal-on-scroll">
+          <span class="section-eyebrow">NOTES FROM OUR PATRONS</span>
+          <h2 class="section-title">Customer Love</h2>
+          <p class="section-subtitle">Real experiences shared by women who have welcomed Blush & Thread into their cherished memories.</p>
+        </div>
+
+        <div class="testimonials-grid">
+          <!-- Testimonial 1 -->
+          <div class="testimonial-card reveal-on-scroll">
+            <div class="testimonial-stars">★★★★★</div>
+            <p class="testimonial-quote">
+              "The Gulnar Chanderi set made me feel breathtakingly poised at my sister’s sangeet. The hand-zardozi touches have that rare delicacy you only see in heirloom couture."
+            </p>
+            <div class="testimonial-author-row">
+              <img class="author-avatar" src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&w=150&q=80" alt="Ananya S.">
+              <div>
+                <h4 class="author-name">Ananya Sharma</h4>
+                <span class="author-location">Bangalore</span>
+                <div class="verified-badge">✓ Verified Patron</div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Testimonial 2 -->
+          <div class="testimonial-card reveal-on-scroll">
+            <div class="testimonial-stars">★★★★★</div>
+            <p class="testimonial-quote">
+              "Finding a tailored blazer dress that fits both high-powered boardroom presentations and evening dinners was impossible until I found Blush & Thread. The fabric quality is exceptional."
+            </p>
+            <div class="testimonial-author-row">
+              <img class="author-avatar" src="https://images.unsplash.com/photo-1518049362265-d5b2a6467637?auto=format&fit=crop&w=150&q=80" alt="Rhea M.">
+              <div>
+                <h4 class="author-name">Rhea Mehta</h4>
+                <span class="author-location">Mumbai</span>
+                <div class="verified-badge">✓ Verified Patron</div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Testimonial 3 -->
+          <div class="testimonial-card reveal-on-scroll">
+            <div class="testimonial-stars">★★★★★</div>
+            <p class="testimonial-quote">
+              "The packaging alone felt like receiving a personal love letter. The silk wrap dress breathes so effortlessly, even in Delhi summers. Dressed in your own beauty indeed."
+            </p>
+            <div class="testimonial-author-row">
+              <img class="author-avatar" src="https://images.unsplash.com/photo-1508427953056-b00b8d78ebf5?auto=format&fit=crop&w=150&q=80" alt="Priya K.">
+              <div>
+                <h4 class="author-name">Dr. Priya Kapoor</h4>
+                <span class="author-location">New Delhi</span>
+                <div class="verified-badge">✓ Verified Patron</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- =======================================================================
+         SECTION H: NEWSLETTER ("A NOTE FROM BLUSH & THREAD.")
+         ======================================================================= -->
+    <section class="newsletter-section" aria-label="Atelier Newsletter">
+      <div class="container">
+        <div class="newsletter-box reveal-on-scroll">
+          <span class="section-eyebrow">THE PRIVATE SALON</span>
+          <h2 class="section-title">A NOTE FROM BLUSH & THREAD.</h2>
+          <p class="newsletter-desc">
+            Receive intimate invitations to private atelier previews, limited capsule drops, and textile storytelling directly in your inbox.
+          </p>
+
+          <form class="newsletter-form" novalidate>
+            <input type="email" class="newsletter-input" placeholder="Enter your email address" required aria-label="Email address for newsletter">
+            <button type="submit" class="btn btn-primary">JOIN THE ATELIER</button>
+          </form>
+
+          <p class="newsletter-msg"></p>
+          <span class="newsletter-privacy">We respect your privacy. Unsubscribe gracefully at any time.</span>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- =========================================================================
+       SECTION I: FOOTER (Warm Ivory Background & Refined Typography)
+       ========================================================================= -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-top-grid">
+        <!-- Brand Bio -->
+        <div class="footer-col-brand">
+          <span class="brand-wordmark">BLUSH & THREAD</span>
+          <span class="brand-tagline">DRESSED IN YOUR OWN BEAUTY.</span>
+          <p class="footer-brand-bio">
+            An independent contemporary womenswear label harmonising authentic Indian handloom textiles with architectural global tailoring.
+          </p>
+          <div class="footer-social-links">
+            <a href="https://instagram.com" target="_blank" rel="noopener noreferrer" class="social-circle-link" aria-label="Instagram">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg>
+            </a>
+            <a href="https://pinterest.com" target="_blank" rel="noopener noreferrer" class="social-circle-link" aria-label="Pinterest">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M8 12a4 4 0 1 0 8 0 4 4 0 0 0-8 0zm0 0v8"/></svg>
+            </a>
+            <a href="mailto:concierge@blushandthread.com" class="social-circle-link" aria-label="Email Concierge">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+            </a>
+          </div>
+        </div>
+
+        <!-- Shop Links -->
+        <div class="footer-col-nav">
+          <h4 class="footer-col-title">Shop Edits</h4>
+          <ul class="footer-link-list">
+            <li><a href="new-arrivals.html" class="footer-link">New Arrivals</a></li>
+            <li><a href="shop.html?category=everyday" class="footer-link">The Everyday Edit</a></li>
+            <li><a href="shop.html?category=occasion" class="footer-link">Occasion Wear</a></li>
+            <li><a href="shop.html?category=ethnic" class="footer-link">Contemporary Ethnic</a></li>
+            <li><a href="shop.html?category=essentials" class="footer-link">Effortless Essentials</a></li>
+          </ul>
+        </div>
+
+        <!-- Collections & Story -->
+        <div class="footer-col-nav">
+          <h4 class="footer-col-title">The Atelier</h4>
+          <ul class="footer-link-list">
+            <li><a href="about.html" class="footer-link">Our Philosophy</a></li>
+            <li><a href="collection.html" class="footer-link">Seasonal Lookbooks</a></li>
+            <li><a href="about.html#artisan-craft" class="footer-link">Artisans & Handloom</a></li>
+            <li><a href="about.html#sustainability" class="footer-link">Ethical Sourcing</a></li>
+            <li><a href="contact.html" class="footer-link">Private Appointments</a></li>
+          </ul>
+        </div>
+
+        <!-- Customer Service -->
+        <div class="footer-col-nav">
+          <h4 class="footer-col-title">Concierge</h4>
+          <ul class="footer-link-list">
+            <li><a href="contact.html#shipping-faq" class="footer-link">Shipping & Delivery</a></li>
+            <li><a href="contact.html#custom-fitting" class="footer-link">Bespoke Fitting</a></li>
+            <li><a href="contact.html#returns-faq" class="footer-link">Returns & Exchanges</a></li>
+            <li><a href="contact.html#care-guide" class="footer-link">Textile Care Guide</a></li>
+            <li><a href="contact.html" class="footer-link">Contact Stylist</a></li>
+          </ul>
+        </div>
+
+        <!-- Boutique Locations -->
+        <div class="footer-col-nav">
+          <h4 class="footer-col-title">Flagship Ateliers</h4>
+          <p class="footer-link" style="margin-bottom:0.75rem;">
+            <strong>Bangalore Atelier</strong><br>
+            12th Main Road, Indiranagar<br>
+            Bangalore 560038
+          </p>
+          <p class="footer-link">
+            <strong>Mumbai Salon</strong><br>
+            Kala Ghoda, Fort<br>
+            Mumbai 400001
+          </p>
+        </div>
+      </div>
+
+      <!-- Bottom Bar -->
+      <div class="footer-bottom-bar">
+        <p>© 2026 BLUSH & THREAD BOUTIQUE. ALL RIGHTS RESERVED. DEMONSTRATION ATELIER.</p>
+        <div class="footer-payment-badges">
+          <span class="payment-badge-tag">UPI</span>
+          <span class="payment-badge-tag">VISA</span>
+          <span class="payment-badge-tag">MASTERCARD</span>
+          <span class="payment-badge-tag">NETBANKING</span>
+          <span class="payment-badge-tag">CURRENCY: INR (₹)</span>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Scripts -->
+  <script src="assets/js/products.js"></script>
+  <script src="assets/js/cart.js"></script>
+  <script src="assets/js/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,387 @@
+/* ==========================================================================
+   BLUSH & THREAD - Responsive Stylesheet
+   Precision tuning for 1440px, 1366px, 1280px, 1024px, 768px, 430px, 390px, 360px
+   ========================================================================== */
+
+/* 1. Large Laptops & Desktops (<= 1280px) */
+@media (max-width: 1280px) {
+  .desktop-nav-list {
+    gap: 1.5rem;
+  }
+
+  .brand-wordmark {
+    font-size: 1.65rem;
+    letter-spacing: 0.18em;
+  }
+
+  .hero-heading {
+    font-size: clamp(2.75rem, 4.5vw, 4.25rem);
+  }
+
+  .product-grid {
+    gap: 1.75rem;
+  }
+
+  .categories-asymmetric-grid {
+    grid-template-columns: 1.1fr 1fr 1fr;
+    gap: 1.5rem;
+  }
+}
+
+/* 2. Tablet Landscape & Small Laptops (<= 1024px) */
+@media (max-width: 1024px) {
+  :root {
+    --header-height-desktop: 74px;
+  }
+
+  /* Switch Header to Mobile Layout */
+  .desktop-nav-list {
+    display: none;
+  }
+
+  .mobile-menu-toggle {
+    display: inline-flex;
+  }
+
+  .header-col-left {
+    justify-content: flex-start;
+  }
+
+  .header-col-right {
+    gap: 0.85rem;
+  }
+
+  .brand-wordmark {
+    font-size: 1.5rem;
+    letter-spacing: 0.16em;
+  }
+
+  .brand-tagline {
+    font-size: 0.52rem;
+    letter-spacing: 0.25em;
+  }
+
+  /* Hero Section */
+  .hero-split-grid {
+    grid-template-columns: 1fr;
+    gap: 3.5rem;
+  }
+
+  .hero-text-col {
+    padding-right: 0;
+    text-align: center;
+  }
+
+  .hero-description {
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .hero-cta-group {
+    justify-content: center;
+  }
+
+  .hero-stats-row {
+    justify-content: center;
+    margin-top: 2.5rem;
+  }
+
+  .hero-floating-card {
+    left: 20px;
+    bottom: -20px;
+  }
+
+  /* Category Grid */
+  .categories-asymmetric-grid {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .cat-card-tall {
+    grid-column: 1 / 2;
+    grid-row: 1 / 2;
+    min-height: 400px;
+    padding: 2.25rem;
+  }
+
+  .cat-card-standard-1 {
+    grid-column: 2 / 3;
+    grid-row: 1 / 2;
+    min-height: 400px;
+  }
+
+  .cat-card-standard-2 {
+    grid-column: 1 / 2;
+    grid-row: 2 / 3;
+    min-height: 340px;
+  }
+
+  .cat-card-wide {
+    grid-column: 2 / 3;
+    grid-row: 2 / 3;
+    min-height: 340px;
+  }
+
+  /* Product Grid: 3 cols on tablet */
+  .product-grid {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1.5rem;
+  }
+
+  /* Signature Layout */
+  .signature-asymmetric-layout {
+    grid-template-columns: 1fr;
+    gap: 3.5rem;
+  }
+
+  .signature-story-content {
+    padding-left: 0;
+  }
+
+  /* Brand Story */
+  .story-split-container {
+    grid-template-columns: 1fr;
+    gap: 3.5rem;
+  }
+
+  .story-quote-stamp {
+    left: 10px;
+    top: 20px;
+  }
+
+  /* Testimonials */
+  .testimonials-grid {
+    grid-template-columns: 1fr;
+    gap: 1.75rem;
+  }
+
+  /* Footer */
+  .footer-top-grid {
+    grid-template-columns: 1fr 1fr;
+    gap: 2.5rem;
+  }
+
+  .footer-col-brand {
+    grid-column: 1 / -1;
+  }
+
+  /* PDP */
+  .pdp-grid {
+    grid-template-columns: 1fr;
+    gap: 3rem;
+  }
+
+  .pdp-gallery-column {
+    position: static;
+  }
+
+  /* Cart */
+  .cart-layout-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .order-summary-box {
+    position: static;
+  }
+
+  /* About */
+  .about-editorial-grid {
+    grid-template-columns: 1fr;
+    gap: 3rem;
+  }
+
+  .values-cards-row {
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+  }
+
+  /* Contact */
+  .contact-layout-grid {
+    grid-template-columns: 1fr;
+    gap: 3rem;
+  }
+}
+
+/* 3. Tablet Portrait (<= 768px) */
+@media (max-width: 768px) {
+  .container {
+    padding-left: 1.25rem;
+    padding-right: 1.25rem;
+  }
+
+  .top-announcement-bar {
+    height: auto;
+    padding: 0.5rem 1rem;
+    font-size: 0.68rem;
+  }
+
+  .announcement-item.secondary {
+    display: none;
+  }
+
+  .announcement-separator {
+    display: none;
+  }
+
+  .header-grid {
+    padding: 0 1.25rem;
+  }
+
+  .brand-wordmark {
+    font-size: 1.35rem;
+    letter-spacing: 0.14em;
+  }
+
+  .brand-tagline {
+    font-size: 0.48rem;
+    letter-spacing: 0.2em;
+  }
+
+  .header-col-right {
+    gap: 0.5rem;
+  }
+
+  .header-icon-btn {
+    width: 38px;
+    height: 38px;
+  }
+
+  /* Product Grid: 2 columns */
+  .product-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1.25rem;
+  }
+
+  .product-quick-actions {
+    display: none; /* On touch devices, direct tap goes to product page */
+  }
+
+  /* Quick View Modal adjustments */
+  .quickview-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .blush-modal-container {
+    padding: 1.75rem 1.25rem;
+  }
+
+  /* Search Overlay */
+  .search-results-grid {
+    grid-template-columns: 1fr;
+  }
+
+  /* Newsletter Form */
+  .newsletter-form {
+    flex-direction: column;
+  }
+
+  /* Footer bottom */
+  .footer-bottom-bar {
+    flex-direction: column;
+    text-align: center;
+    gap: 1rem;
+  }
+}
+
+/* 4. Mobile Standard & Small (<= 430px, 390px, 360px) */
+@media (max-width: 430px) {
+  .hero-heading {
+    font-size: 2.65rem;
+  }
+
+  .hero-description {
+    font-size: 1rem;
+  }
+
+  .hero-cta-group .btn {
+    width: 100%;
+  }
+
+  .hero-floating-card {
+    position: static;
+    margin-top: 1rem;
+    max-width: 100%;
+  }
+
+  .categories-asymmetric-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .cat-card-tall,
+  .cat-card-standard-1,
+  .cat-card-standard-2,
+  .cat-card-wide {
+    grid-column: 1 / 2;
+    min-height: 320px;
+    padding: 1.75rem;
+  }
+
+  .product-grid {
+    grid-template-columns: 1fr; /* single full-width luxury card on narrow mobile */
+    gap: 1.5rem;
+  }
+
+  .product-title {
+    font-size: 1.25rem;
+  }
+
+  .footer-top-grid {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+  }
+
+  .blush-drawer-panel {
+    width: 100%;
+    max-width: 100%;
+  }
+
+  .cart-item-row {
+    grid-template-columns: 70px 1fr;
+    gap: 1rem;
+  }
+
+  .cart-item-total-col {
+    grid-column: 1 / -1;
+    text-align: left;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 0.75rem;
+    border-top: 1px dashed var(--border-subtle);
+  }
+
+  .lookbook-sub-card {
+    position: static;
+    width: 100%;
+    margin-top: 1rem;
+    border: none;
+  }
+
+  .lookbook-main-img {
+    width: 100%;
+  }
+}
+
+/* 5. Very small mobile (<= 360px) */
+@media (max-width: 360px) {
+  .brand-wordmark {
+    font-size: 1.15rem;
+    letter-spacing: 0.1em;
+  }
+
+  .brand-tagline {
+    display: none; /* Hide tagline on ultra-narrow viewport to preserve vertical rhythm */
+  }
+
+  .header-grid {
+    padding: 0 0.75rem;
+  }
+
+  .header-icon-btn {
+    width: 32px;
+    height: 32px;
+  }
+
+  .hero-heading {
+    font-size: 2.25rem;
+  }
+}
